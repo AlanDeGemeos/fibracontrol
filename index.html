@@ -63,7 +63,7 @@
             <div>
               <div class="eyebrow">CENTRAL DE OPERAÇÕES</div>
               <h1 id="pageTitle">Visão geral da rede</h1>
-              <div class="muted" style="font-size: 12px">
+              <div class="muted">
                 Acompanhe CTOs, ocupação e disponibilidade.
               </div>
             </div>
@@ -84,43 +84,31 @@
           <section class="stats">
             <div class="stat">
               <div class="statlabel">
-                CTOs cadastradas <span class="staticon">⌖</span>
+                CTOs cadastradas <span class="staticon green">●</span>
               </div>
               <div class="statnum" id="statCtos">8</div>
               <div class="statnote">Registros neste navegador</div>
             </div>
+
             <div class="stat">
               <div class="statlabel">
-                Portas disponíveis
-                <span
-                  class="staticon"
-                  style="background: var(--greenbg); color: var(--green)"
-                  >↗</span
-                >
+                Portas disponíveis <span class="staticon amber">●</span>
               </div>
               <div class="statnum" id="statFree">34</div>
               <div class="statnote">Confirmadas como livres</div>
             </div>
+
             <div class="stat">
               <div class="statlabel">
-                Portas ocupadas
-                <span
-                  class="staticon"
-                  style="background: var(--redbg); color: var(--red)"
-                  >●</span
-                >
+                Portas ocupadas <span class="staticon red">●</span>
               </div>
               <div class="statnum" id="statUsed">57</div>
               <div class="statnote">Com cliente vinculado</div>
             </div>
+
             <div class="stat">
               <div class="statlabel">
-                A verificar
-                <span
-                  class="staticon"
-                  style="background: var(--amberbg); color: var(--amber)"
-                  >!</span
-                >
+                A verificar <span class="staticon amber">!</span>
               </div>
               <div class="statnum" id="statUnknown">5</div>
               <div class="statnote">Dados ainda não validados</div>
@@ -141,23 +129,7 @@
                     Mapa real • OpenStreetMap · marcadores de demonstração
                   </div>
 
-                  <div
-                    id="mapFallback"
-                    style="
-                      display: none;
-                      position: absolute;
-                      z-index: 1001;
-                      top: 10px;
-                      left: 10px;
-                      right: 10px;
-                      background: #fff;
-                      padding: 10px;
-                      border-radius: 9px;
-                      border: 1px solid #dce3ec;
-                      font-size: 11px;
-                      color: #52616e;
-                    "
-                  >
+                  <div id="mapFallback" class="map-fallback">
                     As ruas não carregaram neste visualizador.
                     <a
                       href="https://www.openstreetmap.org/#map=15/-21.4561/-43.5523"
@@ -169,16 +141,11 @@
                 </div>
               </div>
               <div class="legend">
-                <span
-                  ><i class="dot" style="background: #15966a"></i>Portas
-                  livres</span
+                <span><i class="dot green"></i> Portas livres</span
                 ><span
-                  ><i class="dot" style="background: #d59a22"></i>Baixa
-                  disponibilidade / verificar</span
-                ><span
-                  ><i class="dot" style="background: #d84a5a"></i>Sem portas
-                  livres</span
-                >
+                  ><i class="dot amber"></i> Baixa disponibilidade /
+                  verificar</span
+                ><span><i class="dot red"></i> Sem portas livres</span>
               </div>
             </section>
             <section class="panel">
@@ -223,7 +190,7 @@
             <div>
               <div class="eyebrow">PLANEJAMENTO E CAMPO</div>
               <h1>Projetos de infraestrutura</h1>
-              <div class="muted" style="font-size: 12px">
+              <div class="muted">
                 Gerencie projetos, caixas de emenda, cabos AS e referências
                 técnicas.
               </div>
@@ -387,7 +354,7 @@
               </div>
             </section>
           </div>
-          <section class="panel" style="margin-top: 15px">
+          <section class="panel panel-spaced">
             <div class="panelhead">
               <div>
                 <h2>Referência de cores de fibras</h2>
